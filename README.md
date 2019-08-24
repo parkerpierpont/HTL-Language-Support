@@ -4,13 +4,15 @@ Extremely basic comment, and snippet support for AEM HTML Template Language.
 
 ## Features
 
+- **Conveniences**:
+
 - Properly formats comments
 
 - Automatically closes variable brackets
 
 - Automatically closes other brackets as well
 
-- Snippets:
+- **Snippets**:
 
 - 'component' -> creates component
 
