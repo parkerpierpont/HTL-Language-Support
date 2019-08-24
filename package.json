@@ -1,0 +1,43 @@
+{
+	"name": "htl-language-support",
+	"displayName": "htl-language-support",
+	"publisher": "Parker Pierpont",
+	"description": "",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.37.0"
+	},
+	"categories": [
+		"Programming Languages",
+		"Snippets"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "htl",
+				"aliases": [
+					"HTL",
+					"htl",
+					"HTML (HTL / Sightly / AEM)"
+				],
+				"extensions": [
+					".html"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "htl",
+				"scopeName": "text.html.htl.aem",
+				"path": "./syntaxes/htl.tmLanguage.json"
+			}
+		],
+		"snippets": [
+			{
+				"language": "htl",
+				"path": "./snippets/htl-snippets.json"
+			}
+		]
+	}
+}

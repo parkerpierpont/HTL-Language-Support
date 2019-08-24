@@ -1,0 +1,11 @@
+{
+	"scopeName": "text.html.htl.aem",
+	"name": "HTML (HTL / Sightly / AEM)",
+	"fileTypes": ["html"],
+	"firstLineMatch": "<!--/*",
+	"patterns": [
+		{
+			"include": "text.html.basic"
+		}
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"sly element with attribute": {
+		"prefix": "sly",
+		"body": "<sly data-sly-${1:0}"
+	},
+	"New Component with call to template file": {
+		"prefix": "component",
+		"body": "<sly data-sly-use.${1:data}=\"${2:template}.html\"\n\t\tdata-sly-call=\"${component.${2:template} @ properties=${3:properties}}\" />$0"
+	},
+	"New template": {
+		"prefix": "template",
+		"body": "<template data-sly-template.${1:template}=\"${@ ${2:data}}\">$2</template>$0"
+	}
+}

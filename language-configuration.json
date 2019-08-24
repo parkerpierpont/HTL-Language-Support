@@ -1,0 +1,15 @@
+{
+	"comments": {
+		"blockComment": ["<!--/*", "*/-->"]
+	},
+	"brackets": [["{", "}"], ["[", "]"], ["(", ")"]],
+	"autoClosingPairs": [
+		{ "open": "${", "close": "}" },
+		{ "open": "[", "close": "]" },
+		{ "open": "(", "close": ")" },
+		{ "open": "'", "close": "'", "notIn": ["comment"] },
+		{ "open": "\"", "close": "\"", "notIn": ["string"] }
+	],
+	"autoCloseBefore": ";:.,=}])>` \n\t",
+	"surroundingPairs": [["{", "}"], ["[", "]"], ["(", ")"], ["'", "'"], ["\"", "\""]]
+}
