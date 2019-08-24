@@ -4,7 +4,7 @@ Extremely basic comment, and snippet support for AEM HTML Template Language.
 
 ## Features
 
-- **Conveniences**:
+**Conveniences**:
 
 - Properly formats comments
 
@@ -12,7 +12,7 @@ Extremely basic comment, and snippet support for AEM HTML Template Language.
 
 - Automatically closes other brackets as well
 
-- **Snippets**:
+**Snippets**:
 
 - 'component' -> creates component
 
