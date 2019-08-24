@@ -1,7 +1,8 @@
 {
 	"name": "htl-language-support",
 	"displayName": "htl-language-support",
-	"publisher": "Parker Pierpont",
+	"publisher": "parkerpierpont",
+	"repository": "https://github.com/parkerpierpont/HTL-Language-Support",
 	"description": "",
 	"version": "0.0.1",
 	"engines": {
