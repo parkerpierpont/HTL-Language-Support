@@ -4,13 +4,19 @@ Extremely basic comment, and snippet support for AEM HTML Template Language.
 
 ## Features
 
-> Properly formats comments
-> Automatically closes variable brackets
-> Automatically closes other brackets as well
-> Snippets:
-> 'component' -> creates component
-> 'template' -> creates component markup and references a template
-> 'sly' -> creates sly tag w/ data-sly attribute
+- Properly formats comments
+
+- Automatically closes variable brackets
+
+- Automatically closes other brackets as well
+
+- Snippets:
+
+- 'component' -> creates component
+
+- 'template' -> creates component markup and references a template
+
+- 'sly' -> creates sly tag w/ data-sly attribute
 
 ## Notes
 
