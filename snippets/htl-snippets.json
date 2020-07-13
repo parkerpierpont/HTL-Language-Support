@@ -1,14 +1,122 @@
 {
-	"sly element with attribute": {
+	"HTL sly element with a data-sly empty attribute": {
 		"prefix": "sly",
 		"body": "<sly data-sly-${1:0}></sly>"
 	},
-	"New Component with call to template file": {
+	"New Component with a call to a template file": {
 		"prefix": "component",
 		"body": "<sly data-sly-use.${1:data}=\"${2:template}.html\"\n\t\tdata-sly-call=\"${component.${2:template} @ properties=${3:properties}}\">$0</sly>"
 	},
-	"New template": {
+	"New sly template": {
 		"prefix": "template",
 		"body": "<template data-sly-template.${1:template}=\"${@ ${2:data}}\">$2</template>$0"
+	},
+	"HTL sly element with a data-sly-resource attribute": {
+		"prefix":"sly.resource",
+		"body":"<sly data-sly-resource=\"${${1:item} @ selectors = '${2:event}'}\">$0</sly>"
+	},
+	"HTL sly element with a data-sly-test attribute": {
+		"prefix":"sly.test",
+		"body":"<sly data-sly-test=\"${${1:value}}\">$0</sly>"
+	},
+	"HTL sly element with an identified data-sly-test attribute": {
+		"prefix":"sly.test.var",
+		"body":"<sly data-sly-test.${1:varName}=\"${${2:value}}\">$0</sly>"
+	},
+	"HTL sly element with a data-sly-repeat and a dynamic tag element":{
+		"prefix": ["sly.repeat", "sly.list"],
+		"body": "<${1:tag} data-sly-repeat.${2:varName}=\"${${3:container}.${4:children}}\" data-sly-resource=\"${5:child}\">$0</${1:tag}>"
+	},
+	"HTL sly element with a data-sly-use clientlib definition":{
+		"prefix": "sly.clientlib",
+		"body":"<sly data-sly-use.clientLib=\"${1:path}\">$0</sly>"
+	},
+	"HTL sly element with a data-sly-call attribute":{
+		"prefix": "sly.call",
+		"body":"<sly data-sly-call=\"${1:path}\">$0</sly>"
+	},
+	"HTL sly element with a data-sly-call attribute and a parameter":{
+		"prefix": "sly.call.param",
+		"body":"<sly data-sly-call=\"${${1:clientLib} @ param='${2:value}'}\">$0</sly>"
+	},
+	"HTL sly element with a data-sly-include attribute":{
+		"prefix": "sly.include",
+		"body":"<sly data-sly-include=\"${1:path}\">$0</sly>"
+	},
+	"HTL data sly include attribute":{
+		"prefix": "data-sly-include",
+		"body":"data-sly-include=\"${1:path}\"$0"
+	},
+	"HTL data sly call attribute":{
+		"prefix": "data-sly-call",
+		"body":"data-sly-call=\"${1:path}\"$0"
+	},
+	"HTL data sly element attribute":{
+		"prefix": "data-sly-element",
+		"body":"data-sly-element=\"${1:element}\"$0"
+	},
+	"HTL data-sly-attribute attribute":{
+		"prefix": "data-sly-attribute",
+		"body":"data-sly-attribute.${1:attribute}=\"${2:value}\"$0"
+	},
+	"HTL data-sly-attribute-map attribute":{
+		"prefix": "data-sly-attribute-map",
+		"body":"data-sly-attribute=\"${2:attributeMap}\"$0"
+	},
+	"HTL data sly use attribute":{
+		"prefix": "data-sly-use",
+		"body":"data-sly-use=\"${1:path}\"$0"
+	},
+	"HTL data sly use attribute with var name":{
+		"prefix": "data-sly-use.var",
+		"body":"data-sly-use.${1:varName}=\"${2:value}\"$0"
+	},
+	"HTL data sly use with var name and one parameter":{
+		"prefix": "data-sly-use.var.param",
+		"body":"data-sly-use.${1:varName}=\"${ ${2:path} @ ${3:param1}=${4:paramValue}}\"$0"
+	},
+	"HTL I18n call":{
+		"prefix": "sly.i18n",
+		"body":"${'${1:key}' @ i18n}$0"
+	},
+	"HTL I18n call with a hint":{
+		"prefix": "sly.i18n.hint",
+		"body":"${'${1:key}' @ i18n, hint='${2:hintValue}'}$0"
+	},
+	"HTL I18n call with a locale attribute":{
+		"prefix": "sly.i18n.locale",
+		"body":"${'${1:key}' @ i18n, locale='${2:localeValue}'}$0"
+	},
+	"HTL I18n call with a source attribute":{
+		"prefix": "sly.i18n.source",
+		"body":"${'${1:key}' @ i18n, source='user'}$0"
+	},
+	"HTL I18n call with two dynamic parameters":{
+		"prefix": "sly.i18n.2param",
+		"body":"${'Param1: {0} and Param2: {1}' @ i18n, format=[${1:param1Value}, ${2:param2Value}]}$0"
+	},
+	"HTL I18n call with one dynamic parameter":{
+		"prefix": "sly.i18n.1param",
+		"body":"${'Param1: {0}' @ i18n, format=${1:param1Value}}$0"
+	},
+	"HTL I18n full tag":{
+		"prefix": "sly.i18n.full",
+		"body":"${'${1:key}' @ i18n, locale='${2:localeValue}', hint='${2:hintValue}', source='user'}$0"
+	},
+	"HTL sly join":{
+		"prefix": "sly.join",
+		"body":"${['${1:str1}', '${2:str2}'] @ join='${3:joinChar}'}$0"
+	},
+	"HTL sly context":{
+		"prefix": "sly.context",
+		"body":"${${1:expression} @ context='${2:contextSetting}'}$0"
+	},
+	"HTL 'in' relational string operator":{
+		"prefix": "sly.inStr",
+		"body":"${${1:value} in '${2:targetString}'}$0"
+	},
+	"HTL 'in' relational array operator":{
+		"prefix": "sly.inArray",
+		"body":"${${1:value} in ${2:targetArray}}$0"
 	}
 }
