@@ -7,3 +7,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [Unreleased]
 
 - Initial release
+
+## [0.2.1] - 2020-07-12
+### Added
+- Adding new snippets.
+- Updating old snippets.
+- Updating README.md.

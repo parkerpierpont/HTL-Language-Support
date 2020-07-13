@@ -4,7 +4,7 @@
 	"publisher": "parkerpierpont",
 	"repository": "https://github.com/parkerpierpont/HTL-Language-Support",
 	"description": "",
-	"version": "0.0.1",
+	"version": "0.2.1",
 	"engines": {
 		"vscode": "^1.37.0"
 	},
